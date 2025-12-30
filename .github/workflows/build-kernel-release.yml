@@ -354,11 +354,6 @@ jobs:
           
           echo "susfs_branch=$susfs_branch" >> "$GITHUB_OUTPUT"
 
-      - name: 📥 Checkout Code
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
-
       - name: 📦 Disk usage (pre-build)
         run: |
           echo "::group::Disk usage pre-build"
